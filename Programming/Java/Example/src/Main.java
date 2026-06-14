@@ -16,6 +16,7 @@
  * Java 학습 관련 URL
  * - https://pythontutor.com/visualize.html?utm_source=chatgpt.com#mode=edit
  */
+
 import Example.Example_01.CE01Example_01;
 import Example.Example_02.CE01Example_02;
 import Example.Example_03.CE01Example_03;
@@ -26,6 +27,15 @@ import Example.Example_07.CE01Example_07;
 import Example.Example_08.CE01Example_08;
 import Example.Example_09.CE01Example_09;
 import Example.Example_10.CE01Example_10;
+
+import Training.Training_01.CT01Training_01;
+import Training.Training_02.CT01Training_02;
+import Training.Training_03.CT01Training_03;
+import Training.Training_04.CT01Training_04;
+import Training.Training_05.CT01Training_05;
+import Training.Training_06.CT01Training_06;
+import Training.Training_07.CT01Training_07;
+import Training.Training_08.CT01Training_08;
 
 /*
  * 클래스 (Class) 란?
@@ -70,7 +80,7 @@ public class Main {
 	
 	/** 메인 메서드 */
 	public static void main(String[] args) {
-		CE01Example_01.start(args);
+//		CE01Example_01.start(args);
 //		CE01Example_02.start(args);
 //		CE01Example_03.start(args);
 //		CE01Example_04.start(args);
@@ -80,5 +90,14 @@ public class Main {
 //		CE01Example_08.start(args);
 //		CE01Example_09.start(args);
 //		CE01Example_10.start(args);
+
+//		CT01Training_01.start(args);
+//		CT01Training_02.start(args);
+//		CT01Training_03.start(args);
+//		CT01Training_04.start(args);
+//		CT01Training_05.start(args);
+//		CT01Training_06.start(args);
+//		CT01Training_07.start(args);
+		CT01Training_08.start(args);
 	}
 }
