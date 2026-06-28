@@ -27,6 +27,9 @@ import Example.Example_07.CE01Example_07;
 import Example.Example_08.CE01Example_08;
 import Example.Example_09.CE01Example_09;
 import Example.Example_10.CE01Example_10;
+import Example.Example_11.CE01Example_11;
+import Example.Example_12.CE01Example_12;
+import Example.Example_13.CE01Example_13;
 
 import Training.Training_01.CT01Training_01;
 import Training.Training_02.CT01Training_02;
@@ -43,6 +46,11 @@ import Training.Training_12.CT01Training_12;
 import Training.Training_13.CT01Training_13;
 import Training.Training_14.CT01Training_14;
 import Training.Training_15.CT01Training_15;
+import Training.Training_16.CT01Training_16;
+import Training.Training_17.CT01Training_17;
+import Training.Training_18.CT01Training_18;
+import Training.Training_19.CT01Training_19;
+import Training.Training_20.CT01Training_20;
 
 /*
  * 클래스 (Class) 란?
@@ -97,6 +105,9 @@ public class Main {
 //		CE01Example_08.start(args);
 //		CE01Example_09.start(args);
 //		CE01Example_10.start(args);
+//		CE01Example_11.start(args);
+//		CE01Example_12.start(args);
+		CE01Example_13.start(args);
 
 //		CT01Training_01.start(args);
 //		CT01Training_02.start(args);
@@ -112,6 +123,11 @@ public class Main {
 //		CT01Training_12.start(args);
 //		CT01Training_13.start(args);
 //		CT01Training_14.start(args);
-		CT01Training_15.start(args);
+//		CT01Training_15.start(args);
+//		CT01Training_16.start(args);
+//		CT01Training_17.start(args);
+//		CT01Training_18.start(args);
+//		CT01Training_19.start(args);
+//		CT01Training_20.start(args);
 	}
 }

@@ -25,7 +25,24 @@ public class CT01Training_15 {
 			int nSelect_Computer = oRandom.nextInt(SELECT_ROCK, SELECT_PAPER + 1);
 			
 			int nResult = getResult(nSelect_My, nSelect_Computer);
+			String oStr_Result = convertResult_ToStr(nResult);
+			
+			String oStr_MySelect = convertSelect_ToStr(nSelect_My);
+			String oStr_ComputerSelect = convertSelect_ToStr(nSelect_Computer);
+			
+			System.out.printf("결과 : %s (나 - %s, 컴퓨터 - %s)\n\n",
+					oStr_Result, oStr_MySelect, oStr_ComputerSelect);
+			
+			nCount_Win += (nResult == RESULT_WIN) ? 1 : 0;
+			nCount_Draw += (nResult == RESULT_DRAW) ? 1 : 0;
+			
+			// 패배했을 경우
+			if(nResult == RESULT_LOSE) {
+				break;
+			}
 		} while(true);
+		
+		System.out.printf("\n전적 : %d 승 %d 무 1 패\n", nCount_Win, nCount_Draw);
 	}
 	
 	private static final int RESULT_WIN = 1;
@@ -47,13 +64,35 @@ public class CT01Training_15 {
 		return (a_nSelect_Computer == nSelect_Next) ? RESULT_WIN : RESULT_LOSE;
 	}
 	
-	/** 선택 -> 문자열로 변환한다 */
+	/** 결과 -> 문자열로 변환한다 */
 	private static String convertResult_ToStr(int a_nResult) {
+		switch(a_nResult) {
+			case RESULT_WIN:
+				return "승리";
+				
+			case RESULT_DRAW:
+				return "무승부";
+				
+			case RESULT_LOSE:
+				return "패배";
+		}
+		
 		return "";
 	}
 	
-	/** 결과 -> 문자열로 변환한다 */
+	/** 선택 -> 문자열로 변환한다 */
 	private static String convertSelect_ToStr(int a_nSelect) {
+		switch(a_nSelect) {
+			case SELECT_ROCK:
+				return "바위";
+				
+			case SELECT_SCISSORS:
+				return "가위";
+				
+			case SELECT_PAPER:
+				return "보";
+		}
+		
 		return "";
 	}
 }
